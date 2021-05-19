@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationCore\ApplicationCore.csproj"/>
+    <ProjectReference Include="..\..\EventsParser\EventsParser.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.12.2"/>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0"/>
+    <PackageReference Include="Grpc.Net.Client" Version="2.37.0"/>
+    <PackageReference Include="Grpc.Tools" Version="2.37.1"/>
+    <PackageReference Include="Google.Protobuf" Version="4.0.0-rc2"/>
+    <PackageReference Include="AutoMapper" Version="10.1.1"/>
+    <PackageReference Include="Grpc.Net.Client.Web" Version="2.37.0"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Services\EventsUpdateServiceAggregate\gRPC\Protos\EventChanges.proto" GrpcServices="Client"/>
+  </ItemGroup>
+</Project>
