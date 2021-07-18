@@ -10,6 +10,6 @@ Implementation used:
 * MongoDB
 * Web api for entry points
 * AutoMapper
-* Patter proxy for caching
+* Pattern proxy for caching
 * Parser of events for periodically receive up-to-date information about MMA events
 * gRpc client to send modified data to the telegram bot
